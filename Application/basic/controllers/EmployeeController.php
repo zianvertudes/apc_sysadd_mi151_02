@@ -1,18 +1,18 @@
 <?php
 
-namespace app\models;
+namespace app\controllers;
 
 use Yii;
-use app\models\Guest;
-use app\models\GuestSearch;
+use app\models\Employee;
+use app\models\EmployeeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * GuestController implements the CRUD actions for Guest model.
+ * EmployeeController implements the CRUD actions for Employee model.
  */
-class GuestController extends Controller
+class EmployeeController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class GuestController extends Controller
     }
 
     /**
-     * Lists all Guest models.
+     * Lists all Employee models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new GuestSearch();
+        $searchModel = new EmployeeSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,28 +45,29 @@ class GuestController extends Controller
     }
 
     /**
-     * Displays a single Guest model.
-     * @param integer $id
+     * Displays a single Employee model.
+     * @param integer $emp_id
+     * @param integer $dept_id
      * @return mixed
      */
-    public function actionView($id)
+    public function actionView($emp_id, $dept_id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $this->findModel($emp_id, $dept_id),
         ]);
     }
 
     /**
-     * Creates a new Guest model.
+     * Creates a new Employee model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Guest();
+        $model = new Employee();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->guest_id]);
+            return $this->redirect(['view', 'emp_id' => $model->emp_id, 'dept_id' => $model->dept_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -75,17 +76,18 @@ class GuestController extends Controller
     }
 
     /**
-     * Updates an existing Guest model.
+     * Updates an existing Employee model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
+     * @param integer $emp_id
+     * @param integer $dept_id
      * @return mixed
      */
-    public function actionUpdate($id)
+    public function actionUpdate($emp_id, $dept_id)
     {
-        $model = $this->findModel($id);
+        $model = $this->findModel($emp_id, $dept_id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->guest_id]);
+            return $this->redirect(['view', 'emp_id' => $model->emp_id, 'dept_id' => $model->dept_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -94,28 +96,30 @@ class GuestController extends Controller
     }
 
     /**
-     * Deletes an existing Guest model.
+     * Deletes an existing Employee model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
+     * @param integer $emp_id
+     * @param integer $dept_id
      * @return mixed
      */
-    public function actionDelete($id)
+    public function actionDelete($emp_id, $dept_id)
     {
-        $this->findModel($id)->delete();
+        $this->findModel($emp_id, $dept_id)->delete();
 
         return $this->redirect(['index']);
     }
 
     /**
-     * Finds the Guest model based on its primary key value.
+     * Finds the Employee model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Guest the loaded model
+     * @param integer $emp_id
+     * @param integer $dept_id
+     * @return Employee the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id)
+    protected function findModel($emp_id, $dept_id)
     {
-        if (($model = Guest::findOne($id)) !== null) {
+        if (($model = Employee::findOne(['emp_id' => $emp_id, 'dept_id' => $dept_id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

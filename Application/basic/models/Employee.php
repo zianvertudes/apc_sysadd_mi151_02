@@ -8,10 +8,11 @@ use Yii;
  * This is the model class for table "employee".
  *
  * @property integer $emp_id
- * @property integer $department_dept_id
+ * @property integer $dept_id
+ * @property string $emp_name
  * @property string $position
  *
- * @property Department $departmentDept
+ * @property Department $dept
  * @property Ticket[] $tickets
  * @property TicketDetails[] $ticketDetails
  */
@@ -31,10 +32,11 @@ class Employee extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['emp_id', 'department_dept_id', 'position'], 'required'],
-            [['emp_id', 'department_dept_id'], 'integer'],
+            [['emp_id', 'dept_id', 'emp_name', 'position'], 'required'],
+            [['emp_id', 'dept_id'], 'integer'],
+            [['emp_name'], 'string', 'max' => 120],
             [['position'], 'string', 'max' => 45],
-            [['department_dept_id'], 'exist', 'skipOnError' => true, 'targetClass' => Department::className(), 'targetAttribute' => ['department_dept_id' => 'dept_id']],
+            [['dept_id'], 'exist', 'skipOnError' => true, 'targetClass' => Department::className(), 'targetAttribute' => ['dept_id' => 'dept_id']],
         ];
     }
 
@@ -45,7 +47,8 @@ class Employee extends \yii\db\ActiveRecord
     {
         return [
             'emp_id' => 'Emp ID',
-            'department_dept_id' => 'Department Dept ID',
+            'dept_id' => 'Dept ID',
+            'emp_name' => 'Emp Name',
             'position' => 'Position',
         ];
     }
@@ -53,9 +56,9 @@ class Employee extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getDepartmentDept()
+    public function getDept()
     {
-        return $this->hasOne(Department::className(), ['dept_id' => 'department_dept_id']);
+        return $this->hasOne(Department::className(), ['dept_id' => 'dept_id']);
     }
 
     /**
@@ -71,6 +74,6 @@ class Employee extends \yii\db\ActiveRecord
      */
     public function getTicketDetails()
     {
-        return $this->hasMany(TicketDetails::className(), ['emp_resp_id' => 'emp_id', 'dept_resp_id' => 'department_dept_id']);
+        return $this->hasMany(TicketDetails::className(), ['emp_resp_id' => 'emp_id']);
     }
 }

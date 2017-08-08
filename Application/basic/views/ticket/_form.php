@@ -4,19 +4,21 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Department */
+/* @var $model app\models\Ticket */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="department-form">
+<div class="ticket-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'dept_id')->textInput() ?>
+    <?= $form->field($model, 'ticket_id')->textInput() ?>
 
-    <?= $form->field($model, 'dept_name')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'guest_id')->textInput() ?>
 
-    <?= $form->field($model, 'dept_description')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'room_id')->textInput() ?>
+
+    <?= $form->field($model, 'emp_create_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

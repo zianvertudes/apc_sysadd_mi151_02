@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Department;
+use app\models\Room;
 
 /**
- * DepartmentSearch represents the model behind the search form about `app\models\Department`.
+ * RoomSearch represents the model behind the search form about `app\models\Room`.
  */
-class DepartmentSearch extends Department
+class RoomSearch extends Room
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class DepartmentSearch extends Department
     public function rules()
     {
         return [
-            [['dept_id'], 'integer'],
-            [['dept_name', 'dept_description'], 'safe'],
+            [['room_id'], 'integer'],
+            [['room_type', 'room_loc'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class DepartmentSearch extends Department
      */
     public function search($params)
     {
-        $query = Department::find();
+        $query = Room::find();
 
         // add conditions that should always apply here
 
@@ -59,11 +59,11 @@ class DepartmentSearch extends Department
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'dept_id' => $this->dept_id,
+            'room_id' => $this->room_id,
         ]);
 
-        $query->andFilterWhere(['like', 'dept_name', $this->dept_name])
-            ->andFilterWhere(['like', 'dept_description', $this->dept_description]);
+        $query->andFilterWhere(['like', 'room_type', $this->room_type])
+            ->andFilterWhere(['like', 'room_loc', $this->room_loc]);
 
         return $dataProvider;
     }

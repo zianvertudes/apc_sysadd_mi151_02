@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\employee;
+use app\models\Employee;
 
 /**
- * EmployeeSearch represents the model behind the search form about `app\models\employee`.
+ * EmployeeSearch represents the model behind the search form about `app\models\Employee`.
  */
-class EmployeeSearch extends employee
+class EmployeeSearch extends Employee
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class EmployeeSearch extends employee
     public function rules()
     {
         return [
-            [['emp_id', 'department_dept_id'], 'integer'],
-            [['position'], 'safe'],
+            [['emp_id', 'dept_id'], 'integer'],
+            [['emp_name', 'position'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class EmployeeSearch extends employee
      */
     public function search($params)
     {
-        $query = employee::find();
+        $query = Employee::find();
 
         // add conditions that should always apply here
 
@@ -60,10 +60,11 @@ class EmployeeSearch extends employee
         // grid filtering conditions
         $query->andFilterWhere([
             'emp_id' => $this->emp_id,
-            'department_dept_id' => $this->department_dept_id,
+            'dept_id' => $this->dept_id,
         ]);
 
-        $query->andFilterWhere(['like', 'position', $this->position]);
+        $query->andFilterWhere(['like', 'emp_name', $this->emp_name])
+            ->andFilterWhere(['like', 'position', $this->position]);
 
         return $dataProvider;
     }

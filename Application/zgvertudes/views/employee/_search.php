@@ -17,7 +17,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'emp_id') ?>
 
-    <?= $form->field($model, 'department_dept_id') ?>
+    <?= $form->field($model, 'dept_id') ?>
+
+    <?= $form->field($model, 'emp_name') ?>
 
     <?= $form->field($model, 'position') ?>
 

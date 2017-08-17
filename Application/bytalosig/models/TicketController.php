@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace app\models\Controller;
 
 use Yii;
 use app\models\Ticket;

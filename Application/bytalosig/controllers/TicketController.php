@@ -1,11 +1,10 @@
 <?php
 
-namespace app\models;
+namespace app\models\TicketController;
 
 use Yii;
 use app\models\ticket;
 use app\models\TicketSearch;
-use app\models\TicketController;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

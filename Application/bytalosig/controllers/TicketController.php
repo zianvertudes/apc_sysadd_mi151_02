@@ -5,9 +5,11 @@ namespace app\models;
 use Yii;
 use app\models\ticket;
 use app\models\TicketSearch;
+use app\models\TicketController;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\base\Model;
 
 /**
  * TicketController implements the CRUD actions for ticket model.

@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\ticket;
+use app\models\Ticket;
 
 /**
- * TicketSearch represents the model behind the search form about `app\models\ticket`.
+ * TicketSearch represents the model behind the search form about `app\models\Ticket`.
  */
-class TicketSearch extends ticket
+class TicketSearch extends Ticket
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class TicketSearch extends ticket
      */
     public function search($params)
     {
-        $query = ticket::find();
+        $query = Ticket::find();
 
         // add conditions that should always apply here
 

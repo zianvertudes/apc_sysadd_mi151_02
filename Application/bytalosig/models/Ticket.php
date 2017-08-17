@@ -19,7 +19,7 @@ use Yii;
  * @property TicketDetails[] $ticketDetails
  */
 class Ticket extends \yii\db\ActiveRecord
-{
+	{
     /**
      * @inheritdoc
      */

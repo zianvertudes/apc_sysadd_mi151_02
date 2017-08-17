@@ -2367,3 +2367,1764 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1502944885.65
     'REQUEST_TIME' => 1502944885
 ]
+2017-08-17 07:55:10 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 07:55:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '06d03b6ff1c8878e66a0f5ea18ceb36d4a6a9fa911e8f695e42db4067609c9f8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hIAKY2jIdxA4pDHQ5PSGi5jQP2MULgOX\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=06d03b6ff1c8878e66a0f5ea18ceb36d4a6a9fa911e8f695e42db4067609c9f8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hIAKY2jIdxA4pDHQ5PSGi5jQP2MULgOX%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '51474'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502949310.25
+    'REQUEST_TIME' => 1502949310
+]
+2017-08-17 09:19:58 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 09:19:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '06d03b6ff1c8878e66a0f5ea18ceb36d4a6a9fa911e8f695e42db4067609c9f8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hIAKY2jIdxA4pDHQ5PSGi5jQP2MULgOX\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=06d03b6ff1c8878e66a0f5ea18ceb36d4a6a9fa911e8f695e42db4067609c9f8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hIAKY2jIdxA4pDHQ5PSGi5jQP2MULgOX%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '51608'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502954395.94
+    'REQUEST_TIME' => 1502954395
+]
+2017-08-17 09:25:27 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/ticket/index". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('gii/ticket/inde...', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:25:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/ticket/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49451'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii/ticket/index'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=gii/ticket/index'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502954727.302
+    'REQUEST_TIME' => 1502954727
+]
+2017-08-17 09:27:56 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/ticket/index". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('gii/ticket/inde...', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:27:56 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/ticket/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49468'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii/ticket/index'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=gii/ticket/index'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502954876.065
+    'REQUEST_TIME' => 1502954876
+]
+2017-08-17 09:35:14 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/ticket/index/". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('gii/ticket/inde...', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:35:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/ticket/index/'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49511'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii/ticket/index/'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=gii/ticket/index/'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955314.541
+    'REQUEST_TIME' => 1502955314
+]
+2017-08-17 09:35:22 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/ticket/". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('gii/ticket/', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:35:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/ticket/'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49516'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii/ticket/'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=gii/ticket/'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955322.394
+    'REQUEST_TIME' => 1502955322
+]
+2017-08-17 09:35:27 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 09:35:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955327.627
+    'REQUEST_TIME' => 1502955327
+]
+2017-08-17 09:36:47 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "gii/ticket/". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('gii/ticket/', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:36:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/ticket/'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49526'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii/ticket/'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=gii/ticket/'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955407.56
+    'REQUEST_TIME' => 1502955407
+]
+2017-08-17 09:36:55 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 09:36:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955415.425
+    'REQUEST_TIME' => 1502955415
+]
+2017-08-17 09:37:08 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ticket1". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket1', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:37:08 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket1'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49536'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket1'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket1'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955428.706
+    'REQUEST_TIME' => 1502955428
+]
+2017-08-17 09:37:13 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 09:37:13 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49540'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955433.76
+    'REQUEST_TIME' => 1502955433
+]
+2017-08-17 09:41:56 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "ticket1/index". in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket1/index', Array)
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-08-17 09:41:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket1/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49545'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket1/index'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket1/index'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955715.85
+    'REQUEST_TIME' => 1502955715
+]
+2017-08-17 09:42:01 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 09:42:01 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49549'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502955721.391
+    'REQUEST_TIME' => 1502955721
+]
+2017-08-17 10:28:48 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:28:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49819'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502958528.088
+    'REQUEST_TIME' => 1502958528
+]
+2017-08-17 10:31:06 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot declare class app\models\TicketController because the name is already in use in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\controllers\TicketController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-08-17 10:31:06 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49829'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502958665.948
+    'REQUEST_TIME' => 1502958665
+]
+2017-08-17 10:33:22 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot declare class app\models\TicketController because the name is already in use in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\controllers\TicketController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-08-17 10:33:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502958802.038
+    'REQUEST_TIME' => 1502958802
+]
+2017-08-17 10:33:40 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:33:39 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49843'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502958819.883
+    'REQUEST_TIME' => 1502958819
+]
+2017-08-17 10:40:18 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:40:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '49906'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959218.225
+    'REQUEST_TIME' => 1502959218
+]
+2017-08-17 10:44:43 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:44:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50062'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959483.217
+    'REQUEST_TIME' => 1502959483
+]
+2017-08-17 10:44:50 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:44:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50072'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959490.046
+    'REQUEST_TIME' => 1502959490
+]
+2017-08-17 10:45:33 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot use backend\models\TicketController as TicketController because the name is already in use in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\controllers\TicketController.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-08-17 10:45:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50102'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959532.911
+    'REQUEST_TIME' => 1502959532
+]
+2017-08-17 10:46:00 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:46:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50106'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959560.293
+    'REQUEST_TIME' => 1502959560
+]
+2017-08-17 10:46:50 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Cannot declare class app\model\TicketController\TicketController because the name is already in use in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\controllers\TicketController.php:16
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-08-17 10:46:50 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959610.654
+    'REQUEST_TIME' => 1502959610
+]
+2017-08-17 10:47:16 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected ';', expecting identifier (T_STRING) in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\controllers\TicketController.php:3
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:47:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50117'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959636.221
+    'REQUEST_TIME' => 1502959636
+]
+2017-08-17 10:47:27 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected 'use' (T_USE), expecting identifier (T_STRING) in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\controllers\TicketController.php:5
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:47:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50120'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959647.675
+    'REQUEST_TIME' => 1502959647
+]
+2017-08-17 10:48:15 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:48:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50123'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959695.054
+    'REQUEST_TIME' => 1502959695
+]
+2017-08-17 10:51:15 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:51:14 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502959874.853
+    'REQUEST_TIME' => 1502959874
+]
+2017-08-17 10:55:40 [::1][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'app\controllers\TicketController' in file: C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig/controllers/TicketController.php. Namespace missing? in C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('app\\controllers...')
+#1 [internal function]: spl_autoload_call('app\\controllers...')
+#2 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(564): class_exists('app\\controllers...')
+#3 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('ticket')
+#4 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('')
+#5 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('ticket', Array)
+#6 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\HP\Documents\sysadd2\apc_sysadd_mi151_02\Application\bytalosig\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2017-08-17 10:55:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'ticket'
+]
+
+$_COOKIE = [
+    '_csrf' => '07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VnnJyYMH1a54UvE2Q05AmEozOqvkWffV\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/TMS/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/TMS/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=07f0ad2ce494d4130cd084d9131010a03b18c4c51b513efb0932f47620f110a1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VnnJyYMH1a54UvE2Q05AmEozOqvkWffV%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Intel\\TXE Components\\TCS\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Hewlett-Packard\\SimplePass;C:\\Program Files\\Intel\\TXE Components\\DAL\\;C:\\Program Files\\Intel\\TXE Components\\IPT\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/7.0.21'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/TMS/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/TMS/htdocs/ticket1/web/index.php'
+    'REMOTE_PORT' => '50357'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=ticket'
+    'REQUEST_URI' => '/ticket1/web/index.php?r=ticket'
+    'SCRIPT_NAME' => '/ticket1/web/index.php'
+    'PHP_SELF' => '/ticket1/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1502960140.162
+    'REQUEST_TIME' => 1502960140
+]

@@ -3,14 +3,14 @@
 namespace app\models;
 
 use Yii;
-use app\models\ticket;
+use app\models\Ticket;
 use app\models\TicketSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * TicketController implements the CRUD actions for ticket model.
+ * TicketController implements the CRUD actions for Ticket model.
  */
 class TicketController extends Controller
 {
@@ -30,7 +30,7 @@ class TicketController extends Controller
     }
 
     /**
-     * Lists all ticket models.
+     * Lists all Ticket models.
      * @return mixed
      */
     public function actionIndex()
@@ -45,7 +45,7 @@ class TicketController extends Controller
     }
 
     /**
-     * Displays a single ticket model.
+     * Displays a single Ticket model.
      * @param integer $ticket_id
      * @param integer $guest_id
      * @param integer $room_id
@@ -60,13 +60,13 @@ class TicketController extends Controller
     }
 
     /**
-     * Creates a new ticket model.
+     * Creates a new Ticket model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new ticket();
+        $model = new Ticket();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'ticket_id' => $model->ticket_id, 'guest_id' => $model->guest_id, 'room_id' => $model->room_id, 'emp_create_id' => $model->emp_create_id]);
@@ -78,7 +78,7 @@ class TicketController extends Controller
     }
 
     /**
-     * Updates an existing ticket model.
+     * Updates an existing Ticket model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $ticket_id
      * @param integer $guest_id
@@ -100,7 +100,7 @@ class TicketController extends Controller
     }
 
     /**
-     * Deletes an existing ticket model.
+     * Deletes an existing Ticket model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $ticket_id
      * @param integer $guest_id
@@ -116,18 +116,18 @@ class TicketController extends Controller
     }
 
     /**
-     * Finds the ticket model based on its primary key value.
+     * Finds the Ticket model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $ticket_id
      * @param integer $guest_id
      * @param integer $room_id
      * @param integer $emp_create_id
-     * @return ticket the loaded model
+     * @return Ticket the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($ticket_id, $guest_id, $room_id, $emp_create_id)
     {
-        if (($model = ticket::findOne(['ticket_id' => $ticket_id, 'guest_id' => $guest_id, 'room_id' => $room_id, 'emp_create_id' => $emp_create_id])) !== null) {
+        if (($model = Ticket::findOne(['ticket_id' => $ticket_id, 'guest_id' => $guest_id, 'room_id' => $room_id, 'emp_create_id' => $emp_create_id])) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

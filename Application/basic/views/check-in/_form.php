@@ -25,8 +25,8 @@ use app\models\Room;
 
    
 	<?= $form->field($model, 'room_id')->dropDownList(
-		ArrayHelper::map (Room::find()->all(), 'id', 'fname', 'surname'),
-		['prompt'=>'Select Customer ID']
+		ArrayHelper::map (Room::find()->all(), 'id', 'room_type', 'room_loc' ),
+		['prompt'=>'Select Room']
 		) ?>
 
     <?= $form->field($model, 'check_in')->textInput() ?>

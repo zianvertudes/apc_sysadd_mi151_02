@@ -1,7 +1,10 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use app\models\category;
+use app\models\department;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\category */
@@ -12,7 +15,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'department_id')->textInput() ?>
+	
+	<?= $form->field($model, 'dept_name')->dropDownList(
+		ArrayHelper::map (Category::find()->all(), 'category_id', 'category_name'),
+		['prompt'=>'Select ']
+		) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 

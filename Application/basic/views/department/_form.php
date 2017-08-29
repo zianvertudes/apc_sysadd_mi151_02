@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use app\models\department;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\department */
@@ -13,6 +15,8 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'dept_name')->textInput(['maxlength' => true]) ?>
+	
+	
 
     <?= $form->field($model, 'dept_description')->textarea(['rows' => 6]) ?>
 

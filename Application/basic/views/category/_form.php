@@ -16,9 +16,9 @@ use app\models\department;
     <?php $form = ActiveForm::begin(); ?>
 
 	
-	<?= $form->field($model, 'dept_name')->dropDownList(
-		ArrayHelper::map (Category::find()->all(), 'category_id', 'category_name'),
-		['prompt'=>'Select ']
+	<?= $form->field($model, 'department_id')->dropDownList(
+		ArrayHelper::map (Department::find()->all(), 'id', 'dept_name'),
+		['prompt'=>'Select Department']
 		) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>

@@ -19,10 +19,14 @@ use app\models\Customer1;
 
 	<?= $form->field($model, 'customer_id')->dropDownList(
 		ArrayHelper::map (Customer1::find()->all(), 'id', 'fname', 'surname'),
-		['prompt'=>'Select Customer ID']
+		['prompt'=>'Select Customer']
 		) ?>
 
-    <?= $form->field($model, 'room_id')->textInput() ?>
+   
+		<?= $form->field($model, 'room_id')->dropDownList(
+		ArrayHelper::map (Customer1::find()->all(), 'id', 'fname', 'surname'),
+		['prompt'=>'Select Customer ID']
+		) ?>
 
     <?= $form->field($model, 'check_in')->textInput() ?>
 

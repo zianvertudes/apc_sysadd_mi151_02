@@ -20,7 +20,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'position')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'supervisor')->textInput() ?>
+    <?= $form->field($model, 'supervisor')->textInput()?>
 
     <?= $form->field($model, 'sched_start')->textInput() ?>
 

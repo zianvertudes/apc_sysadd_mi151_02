@@ -12,6 +12,8 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
+    <?= $form->field($model, 'room_no')->textInput() ?>
+
     <?= $form->field($model, 'room_type')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'room_loc')->textInput(['maxlength' => true]) ?>

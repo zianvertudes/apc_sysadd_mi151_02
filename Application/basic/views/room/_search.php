@@ -17,6 +17,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
+    <?= $form->field($model, 'room_no') ?>
+
     <?= $form->field($model, 'room_type') ?>
 
     <?= $form->field($model, 'room_loc') ?>

@@ -18,7 +18,7 @@ use app\models\Customer1;
 
 
 	<?= $form->field($model, 'customer_id')->dropDownList(
-		ArrayHelper::map (Customer1::find()->all(), 'id', 'customer_name'),
+		ArrayHelper::map (Customer1::find()->all(), 'id', 'fname', 'surname'),
 		['prompt'=>'Select Customer ID']
 		) ?>
 

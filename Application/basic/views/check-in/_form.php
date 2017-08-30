@@ -23,8 +23,8 @@ use app\models\Customer1;
 		) ?>
 
    
-		<?= $form->field($model, 'room_id')->dropDownList(
-		ArrayHelper::map (Customer1::find()->all(), 'id', 'fname', 'surname'),
+	<?= $form->field($model, 'room_id')->dropDownList(
+		ArrayHelper::map (Room::find()->all(), 'id', 'fname', 'surname'),
 		['prompt'=>'Select Customer ID']
 		) ?>
 

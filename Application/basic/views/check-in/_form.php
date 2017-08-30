@@ -5,6 +5,7 @@ use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use app\models\CheckIn;
 use app\models\Customer1;
+use app\models\Room;
 
 
 /* @var $this yii\web\View */

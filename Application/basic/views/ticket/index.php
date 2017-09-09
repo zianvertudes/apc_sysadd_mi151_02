@@ -1,22 +1,22 @@
-;'i<?php
+<?php
 
 use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\DepartmentSearch */
+/* @var $searchModel app\models\TicketSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Departments';
+$this->title = 'Tickets';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="department-index">
+<div class="ticket-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Department', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Ticket', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -25,8 +25,16 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'dept_name',
-            'dept_description:ntext',
+            'status',
+            'time_start',
+            'time_end',
+            'time_alloted',
+            // 'escalation_level',
+            // 'desc:ntext',
+            // 'check_in_id',
+            // 'emp_repond_id',
+            // 'category_id',
+            // 'emp_create_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
